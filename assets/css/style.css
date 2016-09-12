@@ -1,0 +1,86 @@
+body{
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+	
+background-image: url(http://orig13.deviantart.net/4be6/f/2012/076/9/4/nyan_side_of_the_moon_by_sonyrootkit-d4t2g2m.png);
+
+
+-webkit-background-size: cover;
+
+
+  -o-background-size: cover;
+
+  background-size: cover;
+}
+	button, div, form {
+	margin: 10px;
+	
+	color: white;
+}
+
+button{
+	background-color: transparent;
+}
+#play{
+	background-color:transparent;
+	border:none;
+	display: none;	
+}
+
+#pause{
+	background-color:transparent;
+	border: none;
+}
+.topicDiv{
+	color: skyblue;
+	margin-left: 525px;
+}
+
+.topicBtn{
+	border-radius: 25px;
+	border-style: dashed;
+	border-top-color: lightskyblue;
+	border-bottom-color: yellow;
+	font-size: 12pt;
+}
+.topicBtn:hover{
+	background-color: indigo;
+	border-radius: 25px;
+	border:none;
+	border-color: transparent;
+	animation: ease-in;
+	animation: step-end;
+}
+#addTopic{
+	
+	background-color: orange;
+	border-color: transparent;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+#addTopic:hover{
+	background-color: green;
+	color:yellow;
+	border-color: white;
+	border-style: double;
+	border-style: dotted double;
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+input{
+	background-color:rgba(36,181,226,.8);
+	color:rgb(233,235,236);
+	border-color: tan;
+	border-style: dotted dashed;
+}
+
+
+#topic-input{
+	font-size: 20px;
+}
