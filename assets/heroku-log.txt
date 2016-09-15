@@ -1,0 +1,38 @@
+https://desolate-headland-83017.herokuapp.com/ 
+
+
+https://git.heroku.com/desolate-headland-83017.git
+
+d——————————————————$ git push heroku master
+Counting objects: 31, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (27/27), done.
+Writing objects: 100% (31/31), 11.72 MiB | 4.28 MiB/s, done.
+Total 31 (delta 6), reused 3 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> PHP app detected
+remote: -----> Bootstrapping...
+remote: -----> Installing platform packages...
+remote:        NOTICE: No runtime required in composer.lock; using PHP ^5.5.17
+remote:        - apache (2.4.20)
+remote:        - nginx (1.8.1)
+remote:        - php (5.6.25)
+remote: -----> Installing dependencies...
+remote:        Composer version 1.2.0 2016-07-19 01:28:52
+remote: -----> Preparing runtime environment...
+remote:        NOTICE: No Procfile, using 'web: vendor/bin/heroku-php-apache2'.
+remote: -----> Checking for additional extensions to install...
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote: 
+remote: -----> Compressing...
+remote:        Done: 25.4M
+remote: -----> Launching...
+remote:        Released v3
+remote:        https://desolate-headland-83017.herokuapp.com/ deployed to Herok
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/desolate-headland-83017.git
+ * [new branch]      master -> master

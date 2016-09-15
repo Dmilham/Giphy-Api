@@ -1,19 +1,19 @@
 body{
-background-repeat: no-repeat;
-background-position: center;
-background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
 	
-background-image: url(http://orig13.deviantart.net/4be6/f/2012/076/9/4/nyan_side_of_the_moon_by_sonyrootkit-d4t2g2m.png);
+	background-image: url(http://orig13.deviantart.net/4be6/f/2012/076/9/4/nyan_side_of_the_moon_by_sonyrootkit-d4t2g2m.png);
 
 
--webkit-background-size: cover;
+	-webkit-background-size: cover;
 
 
-  -o-background-size: cover;
+	-o-background-size: cover;
 
-  background-size: cover;
+	background-size: cover;
 }
-	button, div, form {
+button, div, form {
 	margin: 10px;
 	
 	color: white;
@@ -84,3 +84,24 @@ input{
 #topic-input{
 	font-size: 20px;
 }
+
+@media screen and (max-width: 980px){
+	.topicDiv{
+		margin-left: 250px;
+	}
+
+@media screen and (max-width: 768px){
+	.topicDiv{
+	margin-left: 225px;
+	}
+
+}
+
+
+@media screen and (max-width: 640px){
+	.topicDiv{
+	margin-left: 90px;
+	}
+}
+
+	

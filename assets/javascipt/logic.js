@@ -1,6 +1,6 @@
 $(document).ready(function(){
 var audioElement = document.createElement('audio');
-audioElement.setAttribute('src', 'assets/audio/79-ST125-Scrape-the-Floor.mp3');
+audioElement.setAttribute('src', 'assets/audio/04-Babymetal-Yavai-webedit.ogg');
 audioElement.loop = true;
 
 audioElement.play();
@@ -26,11 +26,11 @@ $("#play").css('display', 'none');
 	// ===============================================================================================================================================
 $("#pause").css('display', 'block');
 
-$('#topic-input').empty();
+
 
 	// displayTopicInfo function now re-renders the HTML to display the appropriate content. 
 	function displayTopicInfo(){
-
+		
 		var topic = $(this).attr('data-name');
 		var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=dc6zaTOxFJmzC";
 
@@ -38,8 +38,8 @@ $('#topic-input').empty();
 		
 		// Creates AJAX call for the specific topic  
 		$.ajax({url: queryURL, method: 'GET'}).done(function(response) {
+	
 			$('#topicsView').empty();
-
 
 			for (var i = 0; i < 11; i++){
 
@@ -68,6 +68,7 @@ $('#topic-input').empty();
 
 			// Puts the entire topic above the previous topics.
 			$('#topicsView').prepend(topicDiv);
+
 			}
 		});
 
@@ -78,6 +79,7 @@ $('#topic-input').empty();
 	// Function for displaying topic data 
 	function renderButtons(){ 
 
+			
 		// Deletes the topics prior to adding new topics.
 		$('#buttonsView').empty();
 
@@ -87,7 +89,7 @@ $('#topic-input').empty();
 		for (var i = 0; i < topics.length; i++){
 
 			// Then dynamicaly generates buttons for each topic in the array
-
+			
 			
 		    var a = $('<button>')  // Sets the variable to = the jQuery call for <button> to write th <button<button/> tags
 		    a.addClass('topicBtn'); // Added a class 
@@ -111,8 +113,12 @@ $('#topic-input').empty();
 		// The array then runs which handles the processing of the topic array
 		renderButtons();
 		$('#topic-input').attr("value", "");
+		$('#topic-input').val('');
 		// This line so that users can hit "enter" instead of clicking on ht button and it won't move to the next page
 		return false;
+		
+	
+
 		
 	})
 
