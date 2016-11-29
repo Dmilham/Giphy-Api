@@ -32,7 +32,7 @@ $("#pause").css('display', 'block');
 	function displayTopicInfo(){
 		
 		var topic = $(this).attr('data-name');
-		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=dc6zaTOxFJmzC";
+		var queryURL = "https://crossorigin.me/http://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=dc6zaTOxFJmzC";
 
 		
 		
